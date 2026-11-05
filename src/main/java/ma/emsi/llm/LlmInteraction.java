@@ -1,8 +1,8 @@
 package ma.emsi.llm;
 
 public record LlmInteraction(
-        String reponseExtraite,
         String questionJson,
-        String reponseJson
+        String reponseJson,
+        String reponseExtraite
 ) {
 }
