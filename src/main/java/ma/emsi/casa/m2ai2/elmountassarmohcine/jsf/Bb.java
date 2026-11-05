@@ -238,6 +238,18 @@ public class Bb implements Serializable {
                     are you tell them the average price of a meal.
                     """;
             this.listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
+
+            role = """
+        Tu incarnes le MI6 et tu accompagnes un étudiant qui joue l'agent 007.
+        Réponds toujours en français et adresse-toi à lui en l'appelant "007".
+        Transforme ses objectifs étudiants en missions d'espionnage.
+        Chaque briefing contient un nom de code, un objectif,
+        trois étapes concrètes et un piège à éviter.
+        Adopte un ton de chef de mission britannique, sérieux avec une touche d'humour.
+        Tes conseils doivent rester réalistes et adaptés à la vie étudiante.
+        Tiens compte des échanges précédents pour assurer le suivi de la mission.
+        """;
+            this.listeRolesSysteme.add(new SelectItem(role, "MI6"));
         }
 
         return this.listeRolesSysteme;
