@@ -47,6 +47,20 @@ public class Bb implements Serializable {
      */
     private String reponse;
     /**
+     * Active ou désactive l'affichage des documents JSON.
+     */
+    private boolean debug;
+
+    /**
+     * JSON envoyé à l'API Gemini.
+     */
+    private String texteRequeteJson;
+
+    /**
+     * JSON reçu de l'API Gemini.
+     */
+    private String texteReponseJson;
+    /**
      * La conversation depuis le début.
      */
     private StringBuilder conversation = new StringBuilder();
@@ -100,6 +114,30 @@ public class Bb implements Serializable {
      */
     public void setReponse(String reponse) {
         this.reponse = reponse;
+    }
+
+    public boolean isDebug() {
+        return debug;
+    }
+
+    public void setDebug(boolean debug) {
+        this.debug = debug;
+    }
+
+    public String getTexteRequeteJson() {
+        return texteRequeteJson;
+    }
+
+    public void setTexteRequeteJson(String texteRequeteJson) {
+        this.texteRequeteJson = texteRequeteJson;
+    }
+
+    public String getTexteReponseJson() {
+        return texteReponseJson;
+    }
+
+    public void setTexteReponseJson(String texteReponseJson) {
+        this.texteReponseJson = texteReponseJson;
     }
 
     public String getConversation() {
